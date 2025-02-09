@@ -1,18 +1,15 @@
-const title = document.querySelector("div.hello:first-child h1")
+const h1 = document.querySelector("div.hello:first-child h1")
 
-
-console.dir(title);
 function handleTitleClick(){
-    title.style.color = "blue";
-}
-function handleMouseEnter(){
-    title.innerText = 'mouse is here';
+    const currentColor = h1.style.color;
+    let newColor;
+    if(currentColor === "blue"){
+        newColor = 'tomato';
+    }
+    else{
+        newColor = 'blue';
+    }
+    h1.style.color = newColor;
 }
 
-function handleMouseLeave(){
-    title.innerText = 'mouse is gone';
-}
-title.addEventListener("click", handleTitleClick);
-title.addEventListener("mouseenter", handleMouseEnter);
-title.addEventListener("mouseleave", handleMouseLeave);
-
+h1.addEventListener("click", handleTitleClick)
