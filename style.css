@@ -1,3 +1,12 @@
 body{
     background-color: beige;
 }
+
+
+.hi{
+    color: red !important;
+}
+
+h1.gmltn{
+    color : grey
+}
