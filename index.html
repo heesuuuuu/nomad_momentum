@@ -7,11 +7,16 @@
     <title>Momentum app</title>
 </head>
 <body>
-    <div id = "login-form">
-        <input value = "what is your name" type= "text" placeholder ="what is your name?" />
-        <button> Log In</button>
+    <form id = "login-form">
+        <input 
+            required
+            maxlength="15"
+            type ='text'
+            placeholder ="what is your name?" 
+            />
+        <input type ='submit' value="Log In" />
         <script src="app.js"></script>
-    </div>
+    </form>
 
 </body>
-</html
+</html>
